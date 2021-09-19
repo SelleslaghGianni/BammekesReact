@@ -45,4 +45,7 @@ const itemOrder = [
   { id: 3, item_id: 3, amount: 1, order_id: 2 },
 ];
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Basket itemOrder={itemOrder} items={items} users={users} orders={orders} />,
+  document.getElementById("root")
+);
